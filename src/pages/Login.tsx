@@ -11,7 +11,7 @@ export default function Login() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://7cvccltb-3100.inc1.devtunnels.ms/admin/api/adminSignin', {
+      const response = await fetch('https://api.qc-tech.co.in/admin/api/adminSignin', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

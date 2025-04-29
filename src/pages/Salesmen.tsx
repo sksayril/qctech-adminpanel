@@ -56,7 +56,7 @@ export default function Salesmen() {
     setLoading(true);
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('https://7cvccltb-3100.inc1.devtunnels.ms/admin/api/serviceman/getall', {
+      const response = await fetch('https://api.qc-tech.co.in/admin/api/serviceman/getall', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -76,7 +76,7 @@ export default function Salesmen() {
     setLoading(true);
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`https://7cvccltb-3100.inc1.devtunnels.ms/admin/api/serviceman/getservicemantask/by-qcid/${serviceManId}`, {
+      const response = await fetch(`https://api.qc-tech.co.in/admin/api/serviceman/getservicemantask/by-qcid/${serviceManId}`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -105,7 +105,7 @@ export default function Salesmen() {
         }
       });
 
-      const response = await fetch('https://7cvccltb-3100.inc1.devtunnels.ms/admin/api/serviceman/create', {
+      const response = await fetch('https://api.qc-tech.co.in/admin/api/serviceman/create', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`
